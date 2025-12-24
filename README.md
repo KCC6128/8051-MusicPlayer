@@ -92,3 +92,23 @@ make clean
 
 > 注意：`make clean` 在 Windows 可用（使用 `del`）。  
 > 若在 Linux/macOS，請把 `src/Makefile` 的 `del` 改成 `rm -f`。
+
+---
+
+## 專案架構（Project Structure）
+
+```
+8051-MusicPlayer/
+│
+├─ README.md                 # 專案說明：Demo 連結、硬體需求、雙 Timer 原理、編譯方式
+├─ .gitignore                # 忽略編譯產物（.ihx/.hex/.rel/.lst...），讓 repo 乾淨
+│
+├─ src/                      # 程式碼與編譯入口（在此資料夾下執行 make）
+│  ├─ Makefile               # 使用 SDCC 編譯 main.c，並輸出 main.hex（燒錄用）
+│  └─ main.c                 # 8051 主程式：Timer0 控拍長、Timer1 產生頻率、P3.4 輸出蜂鳴器
+│
+└─ assets/                   # README 使用的圖片資源
+   ├─ youtube_thumb.png      # YouTube demo 縮圖（README 點擊可跳轉影片）
+   ├─ score.png              # 《煙花易冷》簡譜截圖（對照 sheet[] 播放序列）
+   └─ notes_table.png        # 音符頻率表（C/D/E... 對應頻率，方便理解 note[] 設定）
+```
