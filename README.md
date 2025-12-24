@@ -18,6 +18,20 @@
 
 ---
 
+<details>
+<summary>Score & Note Table (click to expand)</summary>
+
+### Score (簡譜)
+![score](assets/score.png)
+
+### Note Frequency Table
+![note_table](assets/notes_table.png)
+</details>
+
+
+
+---
+
 ## Hardware
 - 8051 (AT89S52)
 - 晶振：**12 MHz**（本專案的 Timer 參數以 12MHz 計算）
