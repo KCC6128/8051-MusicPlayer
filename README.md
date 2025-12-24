@@ -19,7 +19,7 @@
 ---
 
 <details>
-<summary>Score & Note Table (click to expand)</summary>
+<summary>Score (簡譜) & Note Frequency Table (click to expand)</summary>
 
 ### Score (簡譜)
 ![score](assets/score.png)
